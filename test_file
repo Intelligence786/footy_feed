@@ -1,0 +1,236 @@
+                CustomImageView(
+                  imagePath: ImageConstant.imgRectangle3992,
+                  height: 48.adaptSize,
+                  width: 48.adaptSize,
+                  radius: BorderRadius.circular(
+                    8.h,
+                  ),
+                ),
+                SizedBox(height: 9.v),
+                Text(
+                  "lbl_ironclad".tr,
+                  style: CustomTextStyles.titleSmallErrorContainer,
+                )
+              ],
+            ),
+            Spacer(
+              flex: 62,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 9.v),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 2.v),
+                        child: Text(
+                          "lbl_2".tr,
+                          style: theme.textTheme.headlineLarge,
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 4.h,
+                          top: 2.v,
+                        ),
+                        child: Text(
+                          "lbl".tr,
+                          style: theme.textTheme.headlineLarge,
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 4.h,
+                          bottom: 2.v,
+                        ),
+                        child: Text(
+                          "lbl_1".tr,
+                          style: theme.textTheme.headlineLarge,
+                        ),
+                      )
+                    ],
+                  ),
+                  Text(
+                    "lbl_victory_dome".tr,
+                    style: CustomTextStyles.labelLargeErrorContainer,
+                  )
+                ],
+              ),
+            ),
+            Spacer(
+              flex: 37,
+            ),
+            Column(
+              children: [
+                CustomImageView(
+                  imagePath: ImageConstant.imgRectangle399248x48,
+                  height: 48.adaptSize,
+                  width: 48.adaptSize,
+                  radius: BorderRadius.circular(
+                    8.h,
+                  ),
+                ),
+                SizedBox(height: 10.v),
+                Text(
+                  "lbl_apex_predators".tr,
+                  style: CustomTextStyles.titleSmallErrorContainer,
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
+  }
+  /// Section Widget
+  Widget _buildStatisticsColumn(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(
+        horizontal: 8.h,
+        vertical: 17.v,
+      ),
+      decoration: AppDecoration.fillErrorContainer1.copyWith(
+        borderRadius: BorderRadiusStyle.roundedBorder16,
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            "lbl_statistics".tr,
+            style: CustomTextStyles.titleMediumErrorContainer,
+          ),
+          SizedBox(height: 16.v),
+          _buildTwentyFiveRow(
+            context,
+            twentyfive: "lbl_54".tr,
+            statisticsOne: "lbl_goals".tr,
+            eighteen: "lbl_46".tr,
+          ),
+          SizedBox(height: 8.v),
+          _buildTwentyFiveRow(
+            context,
+            twentyfive: "lbl_25".tr,
+            statisticsOne: "lbl_statistics".tr,
+            eighteen: "lbl_18".tr,
+          ),
+          SizedBox(height: 8.v),
+          _buildTwentyFiveRow(
+            context,
+            twentyfive: "lbl_312".tr,
+            statisticsOne: "lbl_passing".tr,
+            eighteen: "lbl_68".tr,
+          ),
+          SizedBox(height: 8.v),
+          _buildTwentyFiveRow(
+            context,
+            twentyfive: "lbl_422".tr,
+            statisticsOne: "lbl_shooting".tr,
+            eighteen: "lbl_57".tr,
+          ),
+          SizedBox(height: 13.v),
+          _buildTwentyFiveRow(
+            context,
+          children: [
+            Column(
+              children: [
+        padding: EdgeInsets.only(left: 24.h),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+        ],
+      ),
+    );
+  }
+  /// Section Widget
+  Widget _buildGameStatsRow(BuildContext context) {
+    return Align(
+      alignment: Alignment.centerRight,
+      child: Padding(
+            width: 299.h,
+          ),
+          SizedBox(height: 13.v),
+          _buildGameStatsRow(context),
+          SizedBox(height: 16.v),
+          _buildStatisticsColumn(context),
+          SizedBox(height: 83.v)
+          CustomImageView(
+            imagePath: ImageConstant.imgFootballField,
+            height: 94.v,
+            ),
+          ),
+          SizedBox(height: 12.v),
+                  child: CustomIconButton(
+                    height: 30.adaptSize,
+                    width: 30.adaptSize,
+                    padding: EdgeInsets.all(3.h),
+                    child: CustomImageView(
+                      imagePath: ImageConstant.imgClose,
+                    ),
+                  ),
+                )
+              ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 105.h),
+                  child: Text(
+                    "lbl_game_stats".tr,
+                    style: theme.textTheme.titleMedium,
+                    top: 3.v,
+                    bottom: 6.v,
+                  ),
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(
+            alignment: Alignment.centerRight,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.start,
+                2.h,
+              ),
+            ),
+          ),
+          SizedBox(height: 3.v),
+          Align(
+            width: 36.h,
+            decoration: BoxDecoration(
+              color: theme.colorScheme.errorContainer,
+              borderRadius: BorderRadius.circular(
+        children: [
+          Container(
+            height: 5.v,
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+    );
+  }
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.maxFinite,
+      padding: EdgeInsets.symmetric(
+        horizontal: 16.h,
+        vertical: 6.v,
+      ),
+      decoration: AppDecoration.gradientPrimaryContainerToOnPrimary.copyWith(
+        borderRadius: BorderRadiusStyle.customBorderTL10,
+        mainGaneStatsModelObj: MainGaneStatsModel(),
+      ))
+        ..add(MainGaneStatsInitialEvent()),
+      child: MainGaneStatsBottomsheet(),
+  static Widget builder(BuildContext context) {
+    return BlocProvider<MainGaneStatsBloc>(
+      create: (context) => MainGaneStatsBloc(MainGaneStatsState(
+          key: key,
+        );
+class MainGaneStatsBottomsheet extends StatelessWidget {
+  const MainGaneStatsBottomsheet({Key? key})
+      : super(
+import '../../widgets/custom_icon_button.dart';
+import 'bloc/main_gane_stats_bloc.dart';
+import 'models/main_gane_stats_model.dart'; // ignore_for_file: must_be_immutable
+import 'package:flutter/material.dart';
+import '../../core/app_export.dart';
